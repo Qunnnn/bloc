@@ -24,12 +24,13 @@ class CounterCubit extends Cubit<CounterState> {
       }
     });
   }
-    void increamentCounter() {
-      emit(state.copyWith(counter: state.counter + incrementSize));
-    }
+  void increamentCounter() {
+    emit(state.copyWith(counter: state.counter + incrementSize));
+  }
+
   @override
   Future<void> close() {
-    colorCubit.close();
+    colorSub.cancel();
     return super.close();
   }
 }
