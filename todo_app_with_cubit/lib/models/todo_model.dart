@@ -18,7 +18,7 @@ class Todo extends Equatable {
   Todo({
     String? id,
     required this.desc,
-    required this.completed,
+    this.completed = false,
   }) : this.id = id ?? uuid.v4();
 
   @override
@@ -26,4 +26,16 @@ class Todo extends Equatable {
 
   @override
   bool get stringify => true;
+
+  Todo copyWith({
+    String? id,
+    String? desc,
+    bool? completed,
+  }) {
+    return Todo(
+      id: id ?? this.id,
+      desc: desc ?? this.desc,
+      completed: completed ?? this.completed,
+    );
+  }
 }
