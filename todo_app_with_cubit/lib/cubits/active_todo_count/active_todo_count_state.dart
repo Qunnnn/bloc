@@ -6,10 +6,6 @@ class ActiveTodoCountState extends Equatable {
     required this.activeTodoCount,
   });
 
-  factory ActiveTodoCountState.initial() {
-    return const ActiveTodoCountState(activeTodoCount: 0);
-  }
-
   ActiveTodoCountState copyWith({
     int? activeTodoCount,
   }) {
