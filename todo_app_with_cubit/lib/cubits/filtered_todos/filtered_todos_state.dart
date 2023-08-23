@@ -6,10 +6,6 @@ class FilteredTodosState extends Equatable {
     required this.filteredTodos,
   });
 
-  factory FilteredTodosState.initial() {
-    return const FilteredTodosState(filteredTodos: []);
-  }
-
   @override
   List<Object> get props => [filteredTodos];
 

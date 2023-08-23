@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_app_with_cubit/cubits/cubits.dart';
-
-import 'widgets/widgets.dart';
+import 'package:todo_app_with_cubit/pages/todo_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,6 +32,7 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider<FilteredTodosCubit>(
           create: (context) => FilteredTodosCubit(
+            initialTodos: context.read<TodoListCubit>().state.todos,
             todoListCubit: context.read<TodoListCubit>(),
             todoSearchCubit: context.read<TodoSearchCubit>(),
             todoFilterCubit: context.read<TodoFilterCubit>(),
@@ -42,39 +42,12 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.deepPurple,
+          ),
           useMaterial3: true,
         ),
         home: const TodoPage(title: 'Flutter Demo Home Page'),
-      ),
-    );
-  }
-}
-
-class TodoPage extends StatefulWidget {
-  const TodoPage({super.key, required this.title});
-  final String title;
-
-  @override
-  State<TodoPage> createState() => _TodoPageState();
-}
-
-class _TodoPageState extends State<TodoPage> {
-  @override
-  Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Scaffold(
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-            child: Column(
-              children: [
-                TodoHeader(),
-                TodoSearch(),
-              ],
-            ),
-          ),
-        ),
       ),
     );
   }
