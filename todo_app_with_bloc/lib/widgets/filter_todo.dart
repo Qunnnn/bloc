@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo_app_with_cubit/cubits/cubits.dart';
-import 'package:todo_app_with_cubit/models/todo_model.dart';
+import '../blocs/blocs.dart';
+import '../models/todo_model.dart';
 
 class TodoFilterAndSearch extends StatelessWidget {
   const TodoFilterAndSearch({
@@ -29,7 +29,9 @@ class TodoFilterAndSearch extends StatelessWidget {
               ),
             ),
             onChanged: (value) {
-              context.read<TodoSearchCubit>().setSearchItem(value);
+              context.read<TodoSearchBloc>().add(
+                    SetSearchTodoTerm(searchTerm: value),
+                  );
             },
           ),
         ),
@@ -61,7 +63,9 @@ class TodoFilterAndSearch extends StatelessWidget {
   }) {
     return TextButton(
       onPressed: () {
-        context.read<TodoFilterCubit>().changeFilter(filter);
+        context.read<TodoFilterBloc>().add(
+              ChangeFilterEvent(filter: filter),
+            );
       },
       child: Text(
         filter == Filter.all
@@ -71,7 +75,7 @@ class TodoFilterAndSearch extends StatelessWidget {
                 : 'Completed',
         style: TextStyle(
           fontSize: 16,
-          color: filter == context.watch<TodoFilterCubit>().state.filter
+          color: filter == context.watch<TodoFilterBloc>().state.filter
               ? Colors.blue
               : Colors.grey,
         ),

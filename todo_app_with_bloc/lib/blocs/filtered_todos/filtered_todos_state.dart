@@ -1,6 +1,19 @@
 part of 'filtered_todos_bloc.dart';
 
-@immutable
-sealed class FilteredTodosState {}
+class FilteredTodosState extends Equatable {
+  final List<Todo> filteredTodos;
+  const FilteredTodosState({
+    required this.filteredTodos,
+  });
 
-final class FilteredTodosInitial extends FilteredTodosState {}
+  @override
+  List<Object> get props => [filteredTodos];
+
+  FilteredTodosState copyWith({
+    List<Todo>? filteredTodos,
+  }) {
+    return FilteredTodosState(
+      filteredTodos: filteredTodos ?? this.filteredTodos,
+    );
+  }
+}

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app_with_cubit/models/todo_model.dart';
 import 'package:todo_app_with_cubit/widgets/show_todos.dart';
 import '../widgets/widgets.dart';
 

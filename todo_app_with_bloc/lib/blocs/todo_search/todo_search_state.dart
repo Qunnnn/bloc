@@ -1,6 +1,24 @@
 part of 'todo_search_bloc.dart';
 
-@immutable
-sealed class TodoSearchState {}
+class TodoSearchState extends Equatable {
+  final String searchTerm;
+  const TodoSearchState({
+    required this.searchTerm,
+  });
+  
+   
+  factory TodoSearchState.initial(){
+    return const TodoSearchState(searchTerm: '');
+  }
 
-final class TodoSearchInitial extends TodoSearchState {}
+  @override
+  List<Object> get props => [searchTerm];
+
+  TodoSearchState copyWith({
+    String? searchTerm,
+  }) {
+    return TodoSearchState(
+      searchTerm: searchTerm ?? this.searchTerm,
+    );
+  }
+}

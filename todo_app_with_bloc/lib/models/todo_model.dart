@@ -19,7 +19,7 @@ class Todo extends Equatable {
     String? id,
     required this.desc,
     this.completed = false,
-  }) : this.id = id ?? uuid.v4();
+  }) : id = id ?? uuid.v4();
 
   @override
   List<Object> get props => [id, desc, completed];

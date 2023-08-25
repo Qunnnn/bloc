@@ -1,6 +1,19 @@
 part of 'active_todo_count_bloc.dart';
 
-@immutable
-sealed class ActiveTodoCountState {}
+class ActiveTodoCountState extends Equatable {
+  final int activeTodoCount;
+  const ActiveTodoCountState({
+    required this.activeTodoCount,
+  });
 
-final class ActiveTodoCountInitial extends ActiveTodoCountState {}
+  ActiveTodoCountState copyWith({
+    int? activeTodoCount,
+  }) {
+    return ActiveTodoCountState(
+      activeTodoCount: activeTodoCount ?? this.activeTodoCount,
+    );
+  }
+
+  @override
+  List<Object> get props => [activeTodoCount];
+}

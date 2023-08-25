@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import '../cubits/todo_list/todo_list_cubit.dart';
+import '../blocs/blocs.dart';
 import '../models/todo_model.dart';
 
 class TodoItem extends StatefulWidget {
@@ -26,7 +26,9 @@ class _TodoItemState extends State<TodoItem> {
         children: [
           SlidableAction(
             onPressed: (context) {
-              context.read<TodoListCubit>().remove(widget.todo);
+              context.read<TodoListBloc>().add(
+                    RemoveTodoEvent(todo: widget.todo),
+                  );
             },
             backgroundColor: const Color(0xFFFE4A49),
             foregroundColor: Colors.white,
@@ -69,9 +71,13 @@ class _TodoItemState extends State<TodoItem> {
                                     error = true;
                                   }
                                   if (!error) {
-                                    context.read<TodoListCubit>().editTodo(
-                                        widget.todo.id,
-                                        textEditingController.text);
+                                    context.read<TodoListBloc>().add(
+                                          EditTodoEvent(
+                                            id: widget.todo.id,
+                                            todoDesc:
+                                                textEditingController.text,
+                                          ),
+                                        );
                                     Navigator.pop(context);
                                   }
                                 },
@@ -96,8 +102,11 @@ class _TodoItemState extends State<TodoItem> {
       child: ListTile(
         leading: Checkbox(
           value: widget.todo.completed,
-          onChanged: (value) =>
-              context.read<TodoListCubit>().toggleTodo(widget.todo.id),
+          onChanged: (value) => context.read<TodoListBloc>().add(
+                ToggleTodoEvent(
+                  id: widget.todo.id,
+                ),
+              ),
         ),
         title: Text(
           widget.todo.desc,

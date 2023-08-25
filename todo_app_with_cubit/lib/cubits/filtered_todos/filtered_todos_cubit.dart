@@ -66,4 +66,12 @@ class FilteredTodosCubit extends Cubit<FilteredTodosState> {
     }
     emit(state.copyWith(filteredTodos: filteredTodos));
   }
+
+  @override
+  Future<void> close() {
+    todoFilterSub.cancel();
+    todoListSub.cancel();
+    todoSearchSub.cancel();
+    return super.close();
+  }
 }

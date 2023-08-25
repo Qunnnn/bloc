@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app_with_cubit/models/todo_model.dart';
-import 'package:todo_app_with_cubit/widgets/show_todos.dart';
+import 'package:todo_app_with_bloc/widgets/show_todos.dart';
 import '../widgets/widgets.dart';
 
 class TodoPage extends StatefulWidget {
@@ -32,7 +31,7 @@ class _TodoPageState extends State<TodoPage> {
                 TodoFilterAndSearch(),
                 ShowTodos(),
               ],
-            ),
+            )
           ),
         ),
       ),

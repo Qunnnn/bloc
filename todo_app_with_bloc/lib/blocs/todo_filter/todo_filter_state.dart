@@ -1,6 +1,23 @@
 part of 'todo_filter_bloc.dart';
 
-@immutable
-sealed class TodoFilterState {}
+class TodoFilterState extends Equatable {
+  final Filter filter;
 
-final class TodoFilterInitial extends TodoFilterState {}
+  const TodoFilterState({required this.filter});
+
+  factory TodoFilterState.initial(){
+    return const TodoFilterState(filter: Filter.all);
+  }
+
+  TodoFilterState copyWith({
+    Filter? filter,
+  }) {
+    return TodoFilterState(
+      filter: filter ?? this.filter,
+    );
+  }
+
+  @override
+  List<Object> get props => [filter];
+
+}
