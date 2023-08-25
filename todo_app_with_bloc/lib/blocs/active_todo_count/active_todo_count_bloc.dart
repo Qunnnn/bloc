@@ -24,25 +24,26 @@ class ActiveTodoCountBloc
           ),
         ) {
     subTodoList = todoListBloc.stream.listen((TodoListState state) {
-      on<ActiveTodoCountEvent>(_activeTodoCountEvent);
+      _activeTodoCountEvent();
     });
-  }
-  void _activeTodoCountEvent(
-    ActiveTodoCountEvent event,
-    Emitter emit,
-  ) {
-      final int currentActiveTodoCount = todoListBloc.state.todos
-          .where((Todo todo) => !todo.completed)
-          .toList()
-          .length;
-      emit(
+
+    on<ActiveTodoCountEvent>(
+      (event, emit) => emit(
         state.copyWith(
-          activeTodoCount: currentActiveTodoCount,
+          activeTodoCount: event.activeTodoCount,
         ),
-      );
+      ),
+    );
+  }
+  void _activeTodoCountEvent() {
+    final int currentActiveTodoCount = todoListBloc.state.todos
+        .where((Todo todo) => !todo.completed)
+        .toList()
+        .length;
+    add(ActiveTodoCountEvent(activeTodoCount: currentActiveTodoCount));
   }
 
-    @override
+  @override
   Future<void> close() {
     subTodoList.cancel();
     return super.close();

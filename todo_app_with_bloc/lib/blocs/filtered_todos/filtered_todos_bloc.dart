@@ -27,21 +27,29 @@ class FilteredTodosBloc extends Bloc<FilteredTodosEvent, FilteredTodosState> {
     required this.todoSearchBloc,
   }) : super(FilteredTodosState(filteredTodos: initialTodos)) {
     todoListSub = todoListBloc.stream.listen((TodoListState todoListState) {
-      on<CalculatedFilteredTodosEvent>(_calculatedFilteredTodos);
+      _setFilteredTodos();
     });
 
     todoFilterSub =
         todoFilterBloc.stream.listen((TodoFilterState todoFilterState) {
-      on<CalculatedFilteredTodosEvent>(_calculatedFilteredTodos);
+      _setFilteredTodos();
     });
 
     todoSearchSub =
         todoSearchBloc.stream.listen((TodoSearchState todoSearchState) {
-      on<CalculatedFilteredTodosEvent>(_calculatedFilteredTodos);
+      _setFilteredTodos();
     });
+
+    on<CalculatedFilteredTodosEvent>(
+      (event, emit) => emit(
+        state.copyWith(
+          filteredTodos: event.filteredTodos,
+        ),
+      ),
+    );
   }
-  void _calculatedFilteredTodos(
-      CalculatedFilteredTodosEvent event, Emitter emit) {
+
+  void _setFilteredTodos() {
     List<Todo> filteredTodos;
 
     switch (todoFilterBloc.state.filter) {
@@ -70,10 +78,11 @@ class FilteredTodosBloc extends Bloc<FilteredTodosEvent, FilteredTodosState> {
           )
           .toList();
     }
-    emit(
-      state.copyWith(filteredTodos: filteredTodos),
+    add(
+      CalculatedFilteredTodosEvent(filteredTodos: filteredTodos),
     );
   }
+
   @override
   Future<void> close() {
     todoFilterSub.cancel();
