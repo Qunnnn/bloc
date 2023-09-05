@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/bloc_2_bloc/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bloc_2_bloc/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bloc_2_bloc/build" />
+      <excludeFolder url="file://$MODULE_DIR$/cubit_2_cubit/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/cubit_2_cubit/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/cubit_2_cubit/build" />
+      <excludeFolder url="file://$MODULE_DIR$/todo_app_with_bloc/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/todo_app_with_bloc/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/todo_app_with_bloc/build" />
+      <excludeFolder url="file://$MODULE_DIR$/todo_app_with_cubit/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/todo_app_with_cubit/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/todo_app_with_cubit/build" />
+      <excludeFolder url="file://$MODULE_DIR$/weather_app_with_cubit/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/weather_app_with_cubit/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/weather_app_with_cubit/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
+  </component>
+</module>
