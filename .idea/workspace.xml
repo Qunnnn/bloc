@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d33da650-0057-4461-872e-64e5e270cb80" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+    <list default="true" id="d33da650-0057-4461-872e-64e5e270cb80" name="Changes" comment="feat(core) core flow">
+      <change beforePath="$PROJECT_DIR$/.idea/bloc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bloc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather_app_with_cubit/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/weather_app_with_cubit/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather_app_with_cubit/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/weather_app_with_cubit/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_app_with_cubit/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/weather_app_with_cubit/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +46,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/src/flutter/flutter/bin/cache/dart-sdk",
-    "settings.editor.selected.configurable": "editing.templates",
+    "last_opened_file_path": "D:/flutterPractices/clone_movies_app",
+    "project.structure.last.edited": "Suggestions",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build.android",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
@@ -56,6 +58,12 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\flutterPractices\bloc\weather_app_with_cubit\lib\blocs\weather" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/weather_app_with_cubit/lib/main.dart" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -74,12 +82,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693930735303</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat(core) core flow">
+      <option name="closed" value="true" />
+      <created>1694013088490</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694013088490</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="feat(core) core flow" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(core) core flow" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
