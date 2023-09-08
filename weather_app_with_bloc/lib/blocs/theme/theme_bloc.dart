@@ -19,9 +19,9 @@ class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
     weatherSubscription =
         weatherBloc.stream.listen((WeatherState weatherState) {
       if (weatherState.weather.theTemp > Constants.warmOrNot) {
-        add(ChangeThemeEvent(appTheme: AppTheme.light));
+        add(const ChangeThemeEvent(appTheme: AppTheme.light));
       } else {
-        add(ChangeThemeEvent(appTheme: AppTheme.dark));
+        add(const ChangeThemeEvent(appTheme: AppTheme.dark));
       }
     });
     on<ChangeThemeEvent>((event, emit) {
