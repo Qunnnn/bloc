@@ -41,6 +41,7 @@ class _SigninPageState extends State<SigninPage> {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
             child: Form(
+              autovalidateMode: _autovalidateMode,
               child: ListView(
                 shrinkWrap: true,
                 children: [
