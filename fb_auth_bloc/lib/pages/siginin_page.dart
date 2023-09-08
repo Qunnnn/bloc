@@ -16,7 +16,7 @@ class _SigninPageState extends State<SigninPage> {
   final _formKey = GlobalKey<FormState>();
   AutovalidateMode _autovalidateMode = AutovalidateMode.disabled;
   final _passwordController = TextEditingController();
-  String? _name, _email, _password;
+  String? _email, _password;
 
   void _submit() {
     setState(() {
