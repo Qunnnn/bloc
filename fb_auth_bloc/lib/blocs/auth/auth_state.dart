@@ -9,13 +9,13 @@ enum AuthStatus {
 class AuthState extends Equatable {
   final AuthStatus authStatus;
   final fbAuth.User? user;
-  AuthState({
+  const AuthState({
     required this.authStatus,
     this.user,
   });
 
   factory AuthState.unknown() {
-    return AuthState(authStatus: AuthStatus.unknown);
+    return const AuthState(authStatus: AuthStatus.unknown);
   }
 
   @override

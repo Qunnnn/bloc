@@ -15,7 +15,6 @@ class SigninCubit extends Cubit<SigninState> {
     required String password,
   }) async {
     emit(state.copyWith(signinStatus: SigninStatus.submitting));
-
     try {
       await authRepository.signin(email: email, password: password);
 

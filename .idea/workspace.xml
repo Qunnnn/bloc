@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d33da650-0057-4461-872e-64e5e270cb80" name="Changes" comment="inprocess(FireBase) configure">
+    <list default="true" id="d33da650-0057-4461-872e-64e5e270cb80" name="Changes" comment="inProcess(UI) add sign in page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather_app_with_bloc/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/weather_app_with_bloc/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/blocs/auth/auth_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/blocs/auth/auth_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/siginin_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/siginin_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/splash_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/shared/widget/app_elevated_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/shared/widget/app_elevated_button.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +68,7 @@
   </component>
   <component name="RunManager">
     <configuration name="main" type="FlutterRunConfigurationType" factoryName="Flutter">
-      <option name="filePath" value="$PROJECT_DIR$/weather_app_with_bloc/lib/main.dart" />
+      <option name="filePath" value="$PROJECT_DIR$/fb_auth_bloc/lib/main.dart" />
       <method v="2" />
     </configuration>
   </component>
@@ -126,7 +129,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694173958167</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="inProcess(UI) add sign in page">
+      <option name="closed" value="true" />
+      <created>1694192175413</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694192175413</updated>
+    </task>
+    <task id="LOCAL-00008" summary="inProcess(UI) add sign in page">
+      <option name="closed" value="true" />
+      <created>1694192216565</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1694192216565</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -136,7 +155,8 @@
     <MESSAGE value="feat(core) init" />
     <MESSAGE value="inprocess(Blocs) Auth Bloc flow" />
     <MESSAGE value="inprocess(FireBase) configure" />
-    <option name="LAST_COMMIT_MESSAGE" value="inprocess(FireBase) configure" />
+    <MESSAGE value="inProcess(UI) add sign in page" />
+    <option name="LAST_COMMIT_MESSAGE" value="inProcess(UI) add sign in page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,6 +1,9 @@
+import 'package:fb_auth_bloc/blocs/signin/signin_cubit.dart';
+import 'package:fb_auth_bloc/shared/utils/error_dialog.dart';
 import 'package:fb_auth_bloc/shared/widget/app_elevated_button.dart';
 import 'package:fb_auth_bloc/shared/widget/app_text_form_field.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'pages.dart';
 
@@ -30,17 +33,24 @@ class _SigninPageState extends State<SigninPage> {
     form.save();
 
     print('email: $_email, password: $_password');
+
+    context.read<SigninCubit>().signin(email: _email!, password: _password!);
   }
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => FocusScope.of(context).unfocus(),
-      child: Scaffold(
+    return BlocConsumer<SigninCubit, SigninState>(
+      listener: (context, state) {
+        if (state.signinStatus == SigninStatus.error) {
+          errorDialog(context, state.error);
+        }
+      },
+      builder: (context, state) => Scaffold(
         body: Center(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
             child: Form(
+              key: _formKey,
               autovalidateMode: _autovalidateMode,
               child: ListView(
                 shrinkWrap: true,
@@ -55,36 +65,44 @@ class _SigninPageState extends State<SigninPage> {
                     labelText: 'Email',
                     keyboardType: TextInputType.emailAddress,
                     prefixIcon: const Icon(Icons.email),
+                    isEmailType: true,
                     onSaved: (String? value) {
                       _email = value;
                     },
                   ),
                   const SizedBox(height: 20.0),
                   AppTextFormField(
-                    labelText: 'Email',
+                    labelText: 'Password',
                     textEditingController: _passwordController,
                     prefixIcon: const Icon(Icons.password),
+                    isPassWord: true,
                     onSaved: (String? value) {
                       _password = value;
                     },
                   ),
                   const SizedBox(height: 20.0),
                   AppElevatedButton(
-                    onPressed: _submit,
-                    text: 'Sign in',
+                    text: state.signinStatus == SigninStatus.submitting
+                        ? 'Loading...'
+                        : 'Sign In',
+                    onPressed: state.signinStatus == SigninStatus.submitting
+                        ? null
+                        : _submit,
                   ),
                   const SizedBox(height: 10.0),
                   TextButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, SignupPage.routeName);
-                    },
-                    child: Text('Not a member? Sign Up!'),
+                    onPressed: state.signinStatus == SigninStatus.submitting
+                        ? null
+                        : () {
+                            Navigator.pushNamed(context, SignupPage.routeName);
+                          },
                     style: TextButton.styleFrom(
                       textStyle: const TextStyle(
                         fontSize: 20,
                         decoration: TextDecoration.underline,
                       ),
                     ),
+                    child: const Text('Not a member? Sign Up!'),
                   ),
                 ],
               ),

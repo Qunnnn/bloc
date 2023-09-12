@@ -13,7 +13,6 @@ class AppElevatedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-      child: Text(text ?? ''),
       style: ElevatedButton.styleFrom(
         textStyle: TextStyle(
           fontSize: 20.0,
@@ -21,6 +20,7 @@ class AppElevatedButton extends StatelessWidget {
         ),
         padding: const EdgeInsets.symmetric(vertical: 10.0),
       ),
+      child: Text(text ?? ''),
     );
   }
 }
