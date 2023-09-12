@@ -13,6 +13,8 @@ class AppTextFormField extends StatelessWidget {
     this.keyboardType,
     this.isEmailType = false,
     this.validator,
+    this.autocorrect = true,
+    this.obscureText = false,
   });
 
   final InputDecoration? inputDecoration;
@@ -24,12 +26,15 @@ class AppTextFormField extends StatelessWidget {
   final Function(String?)? onSaved;
   final TextInputType? keyboardType;
   final String? Function(String?)? validator;
+  final bool autocorrect;
+  final bool obscureText;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       keyboardType: keyboardType,
       controller: textEditingController,
-      obscureText: isPassWord,
+      obscureText: isPassWord == true ? true : obscureText,
+      autocorrect: autocorrect,
       decoration: InputDecoration(
         border: const OutlineInputBorder(),
         filled: true,

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d33da650-0057-4461-872e-64e5e270cb80" name="Changes" comment="feat(Signin)">
+    <list default="true" id="d33da650-0057-4461-872e-64e5e270cb80" name="Changes" comment="inProcess(Signup) Signup Cubit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/signup_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/signup_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/splash_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/shared/widget/app_text_form_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/shared/widget/app_text_form_field.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694532006420</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="inProcess(Signup) Signup Cubit">
+      <option name="closed" value="true" />
+      <created>1694533813928</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694533813928</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,7 +173,8 @@
     <MESSAGE value="inprocess(FireBase) configure" />
     <MESSAGE value="inProcess(UI) add sign in page" />
     <MESSAGE value="feat(Signin)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(Signin)" />
+    <MESSAGE value="inProcess(Signup) Signup Cubit" />
+    <option name="LAST_COMMIT_MESSAGE" value="inProcess(Signup) Signup Cubit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

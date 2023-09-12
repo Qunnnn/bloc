@@ -16,7 +16,7 @@ class SplashPage extends StatelessWidget {
           Navigator.pushNamedAndRemoveUntil(
             context,
             SigninPage.routeName,
-            (route) => false,
+            (route) => true,
           );
         } else if (state.authStatus == AuthStatus.authenticated) {
           Navigator.pushNamed(context, HomePage.routeName);

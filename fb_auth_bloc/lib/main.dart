@@ -1,10 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:fb_auth_bloc/blocs/auth/auth_bloc.dart';
-import 'package:fb_auth_bloc/blocs/signin/signin_cubit.dart';
 import 'package:fb_auth_bloc/pages/pages.dart';
 import 'package:fb_auth_bloc/repositories/auth_repo.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'blocs/blocs.dart';
 import 'firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -40,6 +39,11 @@ class MyApp extends StatelessWidget {
           ),
           BlocProvider<SigninCubit>(
             create: (context) => SigninCubit(
+              authRepository: context.read<AuthRepository>(),
+            ),
+          ),
+          BlocProvider<SignupCubit>(
+            create: (context) => SignupCubit(
               authRepository: context.read<AuthRepository>(),
             ),
           ),
