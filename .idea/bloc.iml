@@ -21,6 +21,12 @@
       <excludeFolder url="file://$MODULE_DIR$/fb_auth_bloc/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/fb_auth_bloc/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/fb_auth_bloc/build" />
+      <excludeFolder url="file://$MODULE_DIR$/fb_auth_bloc/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/fb_auth_bloc/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/fb_auth_bloc/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/build" />
+      <excludeFolder url="file://$MODULE_DIR$/fb_auth_bloc/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/fb_auth_bloc/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/fb_auth_bloc/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/example/build" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 34, extension level 7 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
