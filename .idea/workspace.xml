@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d33da650-0057-4461-872e-64e5e270cb80" name="Changes" comment="feat(Signup) Signup Page">
-      <change beforePath="$PROJECT_DIR$/.idea/bloc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bloc.iml" afterDir="false" />
+    <list default="true" id="d33da650-0057-4461-872e-64e5e270cb80" name="Changes" comment="refactor(SplashPage) refactor">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/siginin_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/siginin_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/home_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/splash_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,23 +50,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ToolWindowRunning Devices.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;com.android.tools.idea.streaming.emulator.zoom.toolbar.visible&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/flutterPractices/bloc/fb_auth_bloc&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowRunning Devices.ShowToolbar": "false",
+    "com.android.tools.idea.devicemanager.tab": "Physical",
+    "com.android.tools.idea.streaming.emulator.zoom.toolbar.visible": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "D:/flutterPractices/bloc/fb_auth_bloc",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "dart.settings",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\flutterPractices\bloc\fb_auth_bloc\assets\images" />
@@ -176,7 +177,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694536437578</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="refactor(SplashPage) refactor">
+      <option name="closed" value="true" />
+      <created>1694606926682</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1694606926682</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactor(SplashPage) refactor">
+      <option name="closed" value="true" />
+      <created>1694606941251</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1694606941251</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,7 +218,8 @@
     <MESSAGE value="feat(Signin)" />
     <MESSAGE value="inProcess(Signup) Signup Cubit" />
     <MESSAGE value="feat(Signup) Signup Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(Signup) Signup Page" />
+    <MESSAGE value="refactor(SplashPage) refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(SplashPage) refactor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
