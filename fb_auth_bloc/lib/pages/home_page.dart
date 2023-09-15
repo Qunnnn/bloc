@@ -21,14 +21,7 @@ class _HomePageState extends State<HomePage> {
           title: const Text('Home'),
           actions: [
             IconButton(
-              onPressed: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) {
-                //     return ProfilePage();
-                //   }),
-                // );
-              },
+              onPressed: () {},
               icon: const Icon(Icons.account_circle),
             ),
             IconButton(
