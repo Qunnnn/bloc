@@ -23,7 +23,7 @@ class SplashPage extends StatelessWidget {
                 : false;
           });
         } else if (state.authStatus == AuthStatus.authenticated) {
-          Navigator.pushNamed(context, HomePage.routeName);
+          Navigator.pushReplacementNamed(context, HomePage.routeName);
         }
       },
       builder: (context, state) {
