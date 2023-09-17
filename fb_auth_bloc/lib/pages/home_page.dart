@@ -2,6 +2,8 @@ import 'package:fb_auth_bloc/blocs/auth/auth_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'profile_page.dart';
+
 class HomePage extends StatefulWidget {
   static const String routeName = '/home';
   const HomePage({Key? key}) : super(key: key);
@@ -21,12 +23,21 @@ class _HomePageState extends State<HomePage> {
           title: const Text('Home'),
           actions: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ProfilePage(),
+                  ),
+                );
+              },
               icon: const Icon(Icons.account_circle),
             ),
             IconButton(
               onPressed: () {
-                context.read<AuthBloc>().add(SignoutRequestedEvent());
+                context.read<AuthBloc>().add(
+                      SignoutRequestedEvent(),
+                    );
               },
               icon: const Icon(Icons.exit_to_app),
             ),
