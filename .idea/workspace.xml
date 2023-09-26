@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d33da650-0057-4461-872e-64e5e270cb80" name="Changes" comment="inProcess(Profile) add profile cubit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/home_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/profile_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/profile_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/fb_auth_bloc/lib/pages/splash_page.dart" afterDir="false" />
-    </list>
+    <list default="true" id="d33da650-0057-4461-872e-64e5e270cb80" name="Changes" comment="Done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694940927279</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Done">
+      <option name="closed" value="true" />
+      <created>1694945893256</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1694945893256</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,7 +246,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="feat(core) core flow" />
-    <MESSAGE value="Done" />
     <MESSAGE value="feat(core) init" />
     <MESSAGE value="inprocess(Blocs) Auth Bloc flow" />
     <MESSAGE value="inprocess(FireBase) configure" />
@@ -254,7 +256,8 @@
     <MESSAGE value="refactor(SplashPage) refactor" />
     <MESSAGE value="inProcess(HomePage) add HomePage" />
     <MESSAGE value="inProcess(Profile) add profile cubit" />
-    <option name="LAST_COMMIT_MESSAGE" value="inProcess(Profile) add profile cubit" />
+    <MESSAGE value="Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
