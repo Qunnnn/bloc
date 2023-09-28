@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d33da650-0057-4461-872e-64e5e270cb80" name="Changes" comment="Test return commit" />
+    <list default="true" id="d33da650-0057-4461-872e-64e5e270cb80" name="Changes" comment="Tested undo commit with drop and cherry-pick">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -255,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695740662567</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Tested undo commit with drop and cherry-pick">
+      <option name="closed" value="true" />
+      <created>1695868222764</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1695868222764</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,7 +295,8 @@
     <MESSAGE value="inProcess(Profile) add profile cubit" />
     <MESSAGE value="Done" />
     <MESSAGE value="Test return commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test return commit" />
+    <MESSAGE value="Tested undo commit with drop and cherry-pick" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested undo commit with drop and cherry-pick" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
